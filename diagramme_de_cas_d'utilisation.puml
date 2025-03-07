@@ -6,15 +6,16 @@ actor Administrateur
 rectangle "FindMyTech" {
   
   (Rechercher un produit) as UC1
-  (Comparer des produits) as UC2
   (Filtrer par catégorie et budget) as UC3
   (Consulter la fiche technique) as UC4
-  (Ajouter un produit à la base de données) as UC5
-  (Modifier/Supprimer un produit) as UC6
-  (Gérer les utilisateurs) as UC7
+  (Comparer des produits) as UC2
   (Ajouter un produit au panier) as UC8
   (Passer une commande) as UC9
   (Effectuer un paiement) as UC10
+
+  (Ajouter un produit à la base de données) as UC5
+  (Modifier/Supprimer un produit) as UC6
+  (Gérer les utilisateurs) as UC7
   (Gérer les commandes) as UC11
   
   Utilisateur --> UC1
