@@ -1,4 +1,4 @@
-@startuml
+@startuml diagramme_de_cas_d'utilisation
 left to right direction
 actor Utilisateur
 actor Administrateur
