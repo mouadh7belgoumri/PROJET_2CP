@@ -1,60 +1,36 @@
-nav {
-    background-color: #333;
-    overflow: hidden;
+$color-gray:#6f6e6b;
+$color-black: #000;
+$main-font-color: #fff;
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    li {
-        float: left;
-
-        a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-
-            &:hover {
-                background-color: #111;
-            }
-        }
-    }
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    color: $main-font-color;
 }
-// Mixin for a box shadow
-@mixin box-shadow($shadow...) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
+.l-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-gray;
+    
 }
-
-// Using the mixin
-nav {
-    @include box-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+.r-side {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:$color-black;
+    height: 100%;
 }
-
-// Variables
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-
-// Nested rules with variables
-button {
-    background-color: $primary-color;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: $secondary-color;
-    }
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    height: 100%;
 }
